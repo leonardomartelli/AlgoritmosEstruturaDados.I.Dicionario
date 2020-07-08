@@ -87,6 +87,7 @@ namespace AlgoritmosEstruturaDados.I.Dicionario
                 {
                     var aux = this.AchaMaior(nodo.Esquerda);
                     nodo.Palavra = aux.Palavra;
+                    nodo.Significado = aux.Significado;
                     nodo.Direita = this.Remove(nodo.Direita, aux.Palavra);
                 }
             }
